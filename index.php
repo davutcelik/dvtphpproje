@@ -5,17 +5,19 @@
 <?php 
 
 if(isset($_POST["ad"])&& (isset($_POST["sifre"]))){
-	if($_POST["ad"]=="davut" && $_POST["sifre"]=="004"){
+	if($_POST["ad"]=="davut" && $_POST["sifre"]=="004")
+	{
 		include("kitap.php");
 		header('refresh:0;'.' url=kitap.php');
-		}
-		else
-		echo "<hr>Kullanici adi veya sifre yanlis<hr>";
-		}
+	}
+	else
+	{
+		echo"<hr>Kullanici adi veya sifre yanlis<hr>";
+	}
 
 ?>
-<center>
 
+<center>
 <form method="post">
 <input type="text" name="ad" id="aad" placeholder="Kullanici Adi"></input><br/>
 

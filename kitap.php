@@ -34,6 +34,10 @@ $dizindekidosyalar = scandir("images/");
 		echo '</a>';
 		echo '</div>';
 		}
+			include("aSayfa.php");
 ?>
+
+<br></br>
+<button type="submit" id="yolla" name="gonder" value="Giris">Giris</button>
 </body>
 </html>
